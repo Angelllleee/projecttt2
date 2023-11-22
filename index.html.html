@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project 2 - Tool Finding</title>
+</head>
+<body>
+  <h1>Tool Finding</h1>
+  
+  <h2>Please select a tool that you need</h2>
+  <div>
+    <img src="file:///C:/Users/User/Pictures/shieldmask2.jpg" alt="Shield Mask" width="150" height="200" onclick="showVideo('file:///C:/Users/User/Downloads/video_shieldmask.mp4')">
+    <img src="file:///C:/Users/User/Pictures/machine2.jpg" alt="Hydraulic Shearing Machine" width="150" height="200" onclick="showVideo('file:///C:/Users/User/Downloads/video_hydraulicshearingmachine.mp4')">
+    <img src="file:///C:/Users/User/Pictures/electrode2.jpg" alt="Electrode Oven" width="150" height="200" onclick="showVideo('file:///C:/Users/User/Downloads/video_electrode%20oven.mp4')">
+  </div>
+  
+  <div id="videoContainer">
+    <video id="videoPlayer" width="640" height="360" controls>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+
+  <script>
+    function showVideo(videoSrc) {
+      var videoPlayer = document.getElementById("videoPlayer");
+      var videoContainer = document.getElementById("videoContainer");
+      
+      videoPlayer.src = videoSrc;
+      videoContainer.style.display = "block";
+    }
+  </script>
+</body>
+</html>
